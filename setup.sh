@@ -1,3 +1,6 @@
+#!/bin/bash
+
+# fetch dependencies if not already existent
 if [[ ! -d "dependencies" ]]; then
     mkdir dependencies
 
@@ -9,6 +12,7 @@ if [[ ! -d "dependencies" ]]; then
     popd
 fi
 
+# create build directories
 if [[ ! -d "build" ]]; then
     mkdir build
 fi
@@ -17,4 +21,5 @@ if [[ ! -d "out" ]]; then
     mkdir out
 fi
 
+# execute first time build
 sh build.sh

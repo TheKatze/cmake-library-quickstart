@@ -1,12 +1,14 @@
+#!/bin/bash
+
 pushd build
 
 cmake -GNinja ..
 
 ninja
 
-cp src/shvrdengine/libshvrdengine.a ../out
-cp src/example/shvrdengine_example ../out
-cp test/shvrdengine_test ../out
+cp src/library/libgeneric_library.a ../out
+cp src/example/library_example ../out
+cp test/library_test ../out
 
 popd
 
