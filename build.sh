@@ -1,3 +1,5 @@
+#!/bin/bash
+
 pushd build
 
 cmake -GNinja ..

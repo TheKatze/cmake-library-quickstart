@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 # fetch dependencies if not already existent
 if [[ ! -d "dependencies" ]]; then
